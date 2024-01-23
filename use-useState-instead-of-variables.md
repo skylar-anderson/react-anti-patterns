@@ -1,5 +1,5 @@
-#
-Use useState Instead of Variables
+# Use useState Instead of Variables
+
 This first one should be a basic one, but I still see developers doing this, sometimes even seniors. To store a state in React you should always use one of the React hooks, like useState or useReducer. Never declare the state directly as a variable in a component. Doing so will redeclare the variable on every render which means that React cannot memoize things it normally memoizes.
 
 ```
